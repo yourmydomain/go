@@ -1,0 +1,287 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,sub,sup,tt,var,u,i,center,dl,dt,dd,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{
+margin:0;
+padding:0;
+outline:0;
+background:transparent;
+color:#000;
+font:12px arial,tahoma,verdana;
+font-weight:400;
+}
+.shop_error {
+	display: none;
+}
+html{					 
+height:100%;
+}
+
+body{
+min-height:100%;	  
+height:100%;
+background:url("fon-head.jpg") repeat-x; 
+}
+
+table{
+border-collapse:collapse;
+border-spacing:0;
+}
+
+tr{
+}
+
+td{
+font-size:12px;
+vertical-align:top;
+}
+
+img{
+border:none;
+}
+
+:focus{
+outline:0;
+}
+
+input{
+border:1px solid #7a7777;
+text-align:center;
+}
+
+div{
+zoom:1;
+}
+
+.clear{
+clear:both;
+height:1px;
+overflow:hidden;
+}
+
+.fl{
+float:left;
+}
+
+.fr{
+float:right;
+}
+
+.fc{
+margin:0 auto;
+}
+
+.tal{
+text-align:left;
+}
+
+.tar{
+text-align:right;
+}
+
+.tac{
+text-align:center;
+}
+
+/* main */
+.main{
+width:100%;
+min-width:1200px;
+margin:auto;
+height:auto !important;
+min-height:100%;
+height:100%;
+background:url("fon.jpg") repeat-y;
+}
+
+/*header*/
+.header{
+position:relative;
+width:100%;
+min-width:1200px;
+height:250px;
+margin-left:auto;
+margin-right:auto;
+background:url("foto.png") top right no-repeat;
+}	 
+
+#head-addr {
+	text-align: right;
+    position: absolute;
+    width: 530px;
+    top: 77px;
+    left: 370px;
+    color: #fff;
+    font-size: 14px;
+    z-index: 100;
+}
+
+#head-addr p {
+	font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    margin: 0px;
+    line-height: 14px;
+}
+#head-addr .h-l {float: left; text-align: left;padding-left: 10px;}
+#head-addr .h-r {float: right; text-align: right;}
+#head-addr .h-l a { text-decoration: none;color: #fff;font-size: 20px; color: #fff;font-weight: bold;}
+
+.logo{
+position:relative;
+width:301px;
+height:155px;
+background:url("logo.jpg") no-repeat;
+}
+
+.contact{
+position:absolute;
+top:142px;
+left:0;
+width:301px;
+height:131px;
+z-index:10px;
+background:url("contact.jpg") no-repeat;
+}
+ 
+.poisk,.primer{
+position:absolute;			
+top:29px;
+left:370px;
+width:490px;
+height:40px;
+z-index:10;
+}
+
+.primer{
+top:49px; 
+left:365px;
+}
+
+.primer p{
+color:#fff;
+}
+
+.menu-top{
+position:absolute;			
+top:0;
+left:301px;
+width:612px;
+height:286px;
+padding:0px 20px 0 20px;
+background:url("menu-head.png") no-repeat;
+}
+
+/*content*/
+.container,.content{
+position:relative;
+z-index:11px;
+width:100%;
+min-width:1200px;
+border-top:10px solid #fff;
+}
+
+.content{
+float:left;
+height:100%;
+}
+
+.texter{
+width:100%;
+min-width:670px;
+padding:0 15px 15px 15px;
+}
+
+/*left right part*/
+.left,.left-top,.left2-top,.left2-c,.left2-bottom{								
+width:250px;
+}
+
+.left{								
+height:100%;
+background:#e5e5e5;
+border-left:45px solid #fff;
+}
+
+.left-top,.left2-top,.left2-bottom{
+height:20px;
+background:url("menu-l-t.jpg") no-repeat;
+}  
+
+.left2-top{
+margin:30px 0 0 0;
+background:url("menu-l2-t.jpg") no-repeat;
+}
+
+.left2-c{	  
+background:url("menu-l2-c.jpg") repeat-y;
+}  
+
+.left2-bottom{
+margin:0 0 50px 0;
+background:url("menu-l2-b.jpg") no-repeat;
+}
+
+.right,.right-top,.right-bottom{
+width:197px;
+height:100%;
+}
+
+.right-top,.right-bottom{
+height:20px;
+background:url("menu-r-t.jpg") no-repeat;
+}
+
+.right-bottom{
+background:url("menu-r-b.jpg") no-repeat;
+}
+
+/* minheight */
+.minheight{
+width:1px;
+height:10px;
+float:right;
+}
+
+.footer_minheight{
+height:80px;
+clear:both;
+}
+
+/* footer */
+.footer{
+width:100%;
+height:80px;
+clear:both;
+margin-top:-80px;
+}
+
+.footer-left,.footer-right{ 
+width:400px;
+float:left;
+padding:50px 0 0 0;
+}
+#foot-addr {
+	margin-left: 50px;
+	margin-top: -70px;
+	color: #000;
+	text-align: left;
+	font-size: 12px;
+}
+.footer-right{ 
+float:right;
+}
+
+#li{
+position: relative;
+float: left;
+left: 50%;
+margin-bottom:10px;
+}
+
+
+.h-r a {
+	color: #fff!important;
+	font-size: 16px;
+	display: inline-block;
+}
+.h-rr {
+	margin: 0 70px 0 30px;
+}

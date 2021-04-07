@@ -1,0 +1,424 @@
+.imagesize-container div {
+	font-family: Verdana, Helvetica;
+	font-size: 10pt;
+}
+.imagesize {
+	outline: none;
+	text-decoration: none;
+}
+.imagesize img {
+	border: 0px solid silver;
+}
+.imagesize:hover img {
+	border-color: gray;
+}
+.imagesize-active-anchor img {
+	visibility: hidden;
+}
+.imagesize-gallery .imagesize-active-anchor img {
+	border-color: black;
+	visibility: visible;
+	cursor: default;
+}
+.imagesize-image {
+	border-width: 2px;
+	border-style: solid;
+	border-color: white;
+	background: gray;
+}
+.imagesize-wrapper, .imagesize-outline {
+	background: white;
+}
+.glossy-dark {
+	background: #111;
+}
+.imagesize-image-blur {
+}
+.imagesize-number {
+	font-weight: bold;
+	color: gray;
+}
+.imagesize-caption {
+	display: none;
+	border-top: none;
+	font-size: 1em;
+	padding: 5px;
+	background: white;
+}
+.imagesize-heading {
+	display: none;
+	font-weight: bold;
+	margin: 0.4em;
+}
+.imagesize-dimming {
+	position: absolute;
+	background: black;
+}
+a.imagesize-full-expand {
+   background: url("") no-repeat;
+   display: block;
+   margin: 0 10px 10px 0;
+   width: 34px;
+   height: 34px;
+}
+.imagesize-loading {
+	display: block;
+	color: black;
+	font-size: 9px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 3px;
+	border: 1px solid white;
+	background-color: white;
+	padding-left: 22px;
+	background-image: url("loader.white.gif");
+	background-repeat: no-repeat;
+	background-position: 3px 1px;
+}
+a.imagesize-credits,
+a.imagesize-credits i {
+	padding: 2px;
+	color: silver;
+	text-decoration: none;
+	font-size: 10px;
+}
+a.imagesize-credits:hover,
+a.imagesize-credits:hover i {
+	color: white;
+	background-color: gray;
+}
+.imagesize-move, .imagesize-move * {
+	cursor: move;
+}
+.imagesize-overlay {
+	display: none;
+}
+.closebutton {
+	position: relative;
+	top: -15px;
+	left: 15px;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	background: url("");
+}
+.imagesize-controls {
+	width: 195px;
+	height: 40px;
+	background: url("") 0 -90px no-repeat;
+	margin: 20px 15px 10px 0;
+}
+.imagesize-controls ul {
+	position: relative;
+	left: 15px;
+	height: 40px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	background: url("") right -90px no-repeat;
+}
+.imagesize-controls li {
+	float: left;
+	padding: 5px 0;
+}
+.imagesize-controls a {
+	background-image: url("");
+	display: block;
+	float: left;
+	height: 30px;
+	width: 30px;
+	outline: none;
+}
+.imagesize-controls a.disabled {
+	cursor: default;
+}
+.imagesize-controls a span {
+	display: none;
+}
+.imagesize-controls .imagesize-previous a {
+	background-position: 0 0;
+}
+.imagesize-controls .imagesize-previous a:hover {
+	background-position: 0 -30px;
+}
+.imagesize-controls .imagesize-previous a.disabled {
+	background-position: 0 -60px !important;
+}
+.imagesize-controls .imagesize-play a {
+	background-position: -30px 0;
+}
+.imagesize-controls .imagesize-play a:hover {
+	background-position: -30px -30px;
+}
+.imagesize-controls .imagesize-play a.disabled {
+	background-position: -30px -60px !important;
+}
+.imagesize-controls .imagesize-pause a {
+	background-position: -60px 0;
+}
+.imagesize-controls .imagesize-pause a:hover {
+	background-position: -60px -30px;
+}
+.imagesize-controls .imagesize-next a {
+	background-position: -90px 0;
+}
+.imagesize-controls .imagesize-next a:hover {
+	background-position: -90px -30px;
+}
+.imagesize-controls .imagesize-next a.disabled {
+	background-position: -90px -60px !important;
+}
+.imagesize-controls .imagesize-move a {
+	background-position: -120px 0;
+}
+.imagesize-controls .imagesize-move a:hover {
+	background-position: -120px -30px;
+}
+.imagesize-controls .imagesize-full-expand a {
+	background-position: -150px 0;
+}
+.imagesize-controls .imagesize-full-expand a:hover {
+	background-position: -150px -30px;
+}
+.imagesize-controls .imagesize-full-expand a.disabled {
+	background-position: -150px -60px !important;
+}
+.imagesize-controls .imagesize-close a {
+	background-position: -180px 0;
+}
+.imagesize-controls .imagesize-close a:hover {
+	background-position: -180px -30px;
+}
+.imagesize-maincontent {
+	display: none;
+}
+.imagesize-html {
+	background-color: white;
+}
+.imagesize-html-content {
+	display: none;
+	width: 400px;
+	padding: 0 5px 5px 5px;
+}
+.imagesize-header {
+	padding-bottom: 5px;
+}
+.imagesize-header ul {
+	margin: 0;
+	padding: 0;
+	text-align: right;
+}
+.imagesize-header ul li {
+	display: inline;
+	padding-left: 1em;
+}
+.imagesize-header ul li.imagesize-previous, .imagesize-header ul li.imagesize-next {
+	display: none;
+}
+.imagesize-header a {
+	font-weight: bold;
+	color: gray;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.imagesize-header a:hover {
+	color: black;
+}
+.imagesize-header .imagesize-move a {
+	cursor: move;
+}
+.imagesize-footer {
+	height: 11px;
+}
+.imagesize-footer .imagesize-resize {
+	float: right;
+	height: 11px;
+	width: 11px;
+	background: url("");
+}
+.imagesize-body {
+}
+.imagesize-resize {
+	cursor: nw-resize;
+}
+.draggable-header .imagesize-header {
+	height: 16px;
+}
+.draggable-header .imagesize-header .imagesize-move {
+	cursor: move;
+	display: block;
+	height: 16px;
+	position: absolute;
+	left: 0;
+	right: 16px;
+	top: 0;
+	width: auto;
+	z-index: 1;
+}
+.draggable-header .imagesize-header .imagesize-move * {
+	display: none;
+}
+.draggable-header .imagesize-header .imagesize-close {
+	position: relative;
+	float: right;
+	z-index: 2;
+	padding: 0;
+}
+.draggable-header .imagesize-header .imagesize-close a {
+	display: block;
+	height: 16px;
+	width: 16px;
+	background-image: url("");
+}
+.draggable-header .imagesize-header .imagesize-close a:hover {
+	background-position: 0 16px;
+}
+.draggable-header .imagesize-header .imagesize-close span {
+	display: none;
+}
+.no-footer .imagesize-footer {
+	display: none;
+}
+.wide-border .imagesize-image {
+	border-width: 10px;
+}
+.wide-border .imagesize-caption {
+	padding: 0 10px 10px 10px;
+}
+.borderless .imagesize-image {
+	border: none;
+}
+.borderless .imagesize-caption {
+	border-bottom: 1px solid white;
+	border-top: 1px solid white;
+	background: silver;
+}
+.outer-glow {
+	background: #444;
+}
+.outer-glow .imagesize-image {
+	border: 5px solid #444444;
+}
+.outer-glow .imagesize-caption {
+	border: 5px solid #444444;
+	border-top: none;
+	padding: 5px;
+	background-color: gray;
+}
+.colored-border .imagesize-image {
+	border: 2px solid green;
+}
+.colored-border .imagesize-caption {
+	border: 2px solid green;
+	border-top: none;
+}
+.dark {
+	background: #111;
+}
+.dark .imagesize-image {
+	border-color: black black #202020 black;
+	background: gray;
+}
+.dark .imagesize-caption {
+	color: white;
+	background: #111;
+}
+.dark .imagesize-controls,
+.dark .imagesize-controls ul,
+.dark .imagesize-controls a {
+	background-image: url("");
+}
+.floating-caption .imagesize-caption {
+	position: absolute;
+	padding: 1em 0 0 0;
+	background: none;
+	color: white;
+	border: none;
+	font-weight: bold;
+}
+.controls-in-heading .imagesize-heading {
+	color: gray;
+	font-weight: bold;
+	height: 20px;
+	overflow: hidden;
+	cursor: default;
+	padding: 0 0 0 22px;
+	margin: 0;
+	background: url("") no-repeat 0 1px;
+}
+.controls-in-heading .imagesize-controls {
+	width: 105px;
+	height: 20px;
+	position: relative;
+	margin: 0;
+	top: -23px;
+	left: 7px;
+	background: none;
+}
+.controls-in-heading .imagesize-controls ul {
+	position: static;
+	height: 20px;
+	background: none;
+}
+.controls-in-heading .imagesize-controls li {
+	padding: 0;
+}
+.controls-in-heading .imagesize-controls a {
+	background-image: url("");
+	height: 20px;
+	width: 20px;
+}
+
+.controls-in-heading .imagesize-controls .imagesize-move {
+	display: none;
+}
+
+.controls-in-heading .imagesize-controls .imagesize-previous a {
+	background-position: 0 0;
+}
+.controls-in-heading .imagesize-controls .imagesize-previous a:hover {
+	background-position: 0 -20px;
+}
+.controls-in-heading .imagesize-controls .imagesize-previous a.disabled {
+	background-position: 0 -40px !important;
+}
+.controls-in-heading .imagesize-controls .imagesize-play a {
+	background-position: -20px 0;
+}
+.controls-in-heading .imagesize-controls .imagesize-play a:hover {
+	background-position: -20px -20px;
+}
+.controls-in-heading .imagesize-controls .imagesize-play a.disabled {
+	background-position: -20px -40px !important;
+}
+.controls-in-heading .imagesize-controls .imagesize-pause a {
+	background-position: -40px 0;
+}
+.controls-in-heading .imagesize-controls .imagesize-pause a:hover {
+	background-position: -40px -20px;
+}
+.controls-in-heading .imagesize-controls .imagesize-next a {
+	background-position: -60px 0;
+}
+.controls-in-heading .imagesize-controls .imagesize-next a:hover {
+	background-position: -60px -20px;
+}
+.controls-in-heading .imagesize-controls .imagesize-next a.disabled {
+	background-position: -60px -40px !important;
+}
+.controls-in-heading .imagesize-controls .imagesize-full-expand a {
+	background-position: -100px 0;
+}
+.controls-in-heading .imagesize-controls .imagesize-full-expand a:hover {
+	background-position: -100px -20px;
+}
+.controls-in-heading .imagesize-controls .imagesize-full-expand a.disabled {
+	background-position: -100px -40px !important;
+}
+.controls-in-heading .imagesize-controls .imagesize-close a {
+	background-position: -120px 0;
+}
+.controls-in-heading .imagesize-controls .imagesize-close a:hover {
+	background-position: -120px -20px;
+}
